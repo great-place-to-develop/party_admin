@@ -39,6 +39,20 @@ npm run format          # Format all code with Prettier
 npm run format:check    # Check if code is formatted
 ```
 
+### Docker
+
+```bash
+# Development with Docker
+docker-compose up app-dev         # Start dev server in Docker
+docker-compose up -d app-dev      # Start in background
+docker-compose logs -f app-dev    # View logs
+
+# Production with Docker
+docker-compose --profile production up app-prod
+docker build -t party-admin:latest .
+docker run -p 8080:80 party-admin:latest
+```
+
 ## File Naming Conventions
 
 - **Components**: PascalCase - `UserProfile.jsx`, `InviteCard.tsx`

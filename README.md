@@ -319,6 +319,43 @@ VITE_LAUNCHDARKLY_CLIENT_ID=your-launchdarkly-client-id
 VITE_DEFAULT_LANGUAGE=en
 ```
 
+### Docker Deployment
+
+The application includes full Docker support for containerized deployment.
+
+**Quick Start with Docker:**
+
+```bash
+# Development
+docker-compose up app-dev
+# Access at http://localhost:5173
+
+# Production
+docker-compose --profile production up app-prod
+# Access at http://localhost:8080
+```
+
+**Build and run manually:**
+
+```bash
+# Build production image
+docker build -t party-admin:latest .
+
+# Run container
+docker run -p 8080:80 party-admin:latest
+```
+
+**Features:**
+
+- ✅ Multi-stage build for optimized image size (~40-50MB)
+- ✅ Nginx for production serving with gzip compression
+- ✅ Health checks included
+- ✅ Security headers configured
+- ✅ Development mode with hot reload
+- ✅ Docker Compose for easy orchestration
+
+For complete Docker documentation including cloud deployment, see [DOCKER.md](./DOCKER.md).
+
 ## Localization (i18n)
 
 The application supports multiple languages out of the box:
