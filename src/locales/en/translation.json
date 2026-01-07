@@ -1,0 +1,306 @@
+{
+  "app": {
+    "name": "Party Admin",
+    "tagline": "Create Beautiful Party Invitations & Manage Events"
+  },
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "close": "Close",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "add": "Add",
+    "create": "Create",
+    "update": "Update",
+    "send": "Send",
+    "share": "Share",
+    "download": "Download",
+    "preview": "Preview",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "logout": "Logout",
+    "getStarted": "Get Started Free",
+    "welcome": "Welcome back",
+    "signInToContinue": "Sign in to continue"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "myInvites": "My Invites",
+    "createInvite": "Create Invite",
+    "settings": "Settings",
+    "profile": "Profile"
+  },
+  "landing": {
+    "hero": {
+      "title": "Create Beautiful Party Invitations in Minutes",
+      "subtitle": "Free online party invitation maker and event management tool. Design custom invites, track RSVPs, and manage everything in one place.",
+      "cta": "Get Started Free",
+      "learnMore": "Learn More"
+    },
+    "perfectFor": {
+      "title": "Perfect for:",
+      "birthdayParties": "Birthday Parties",
+      "weddings": "Weddings",
+      "corporateEvents": "Corporate Events",
+      "babyShowers": "Baby Showers",
+      "graduations": "Graduations",
+      "anyCelebration": "Any Celebration"
+    },
+    "features": {
+      "title": "Everything You Need to Plan Your Perfect Event",
+      "subtitle": "Professional event management tools, completely free",
+      "customDesigner": {
+        "title": "Custom Invite Designer",
+        "description": "Create stunning party invitations with our drag-and-drop designer. Customize colors, fonts, images, and layouts to match your event theme perfectly."
+      },
+      "inviteManagement": {
+        "title": "Easy Invite Management",
+        "description": "Send invitations via email, track RSVPs, manage guest lists, and handle seat confirmations all in one place. Never lose track of your guests again."
+      },
+      "qrCode": {
+        "title": "QR Code & URL Generation",
+        "description": "Generate unique QR codes and shareable URLs for your invitations. Make it easy for guests to RSVP and request additional seats instantly."
+      },
+      "eventInfo": {
+        "title": "Event Information Hub",
+        "description": "Share important details with your guests including nearby hotels, restaurants, attractions, and transportation options. Everything they need in one place."
+      },
+      "templates": {
+        "title": "Beautiful Templates",
+        "description": "Choose from our collection of professionally designed templates or create your own from scratch. Save custom templates for future events."
+      },
+      "rsvpTracking": {
+        "title": "RSVP Tracking",
+        "description": "Real-time RSVP tracking with automatic updates. Know exactly who's coming, who's pending, and how many seats are confirmed."
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Sign Up",
+        "description": "Create your free account in seconds"
+      },
+      "step2": {
+        "title": "Design",
+        "description": "Choose a template or create from scratch"
+      },
+      "step3": {
+        "title": "Customize",
+        "description": "Add your event details, colors, and images"
+      },
+      "step4": {
+        "title": "Send",
+        "description": "Share via email, URL, or QR code"
+      },
+      "step5": {
+        "title": "Track",
+        "description": "Monitor RSVPs and manage your guest list"
+      },
+      "step6": {
+        "title": "Celebrate",
+        "description": "Enjoy your perfectly planned event!"
+      }
+    },
+    "cta": {
+      "title": "Ready to Create Your Perfect Invitation?",
+      "subtitle": "Join thousands of happy event planners using Party Admin",
+      "button": "Start Creating for Free"
+    },
+    "footer": {
+      "copyright": "© 2026 Party Admin. All rights reserved."
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "stats": {
+      "totalInvites": "Total Invites",
+      "totalGuests": "Total Guests",
+      "confirmed": "Confirmed",
+      "upcomingEvents": "Upcoming Events"
+    },
+    "recentInvites": "Recent Invites",
+    "viewAll": "View All",
+    "noInvites": {
+      "title": "No invites yet",
+      "description": "Create your first invite to get started",
+      "cta": "Create Your First Invite"
+    }
+  },
+  "invites": {
+    "title": "My Invites",
+    "createNew": "Create New Invite",
+    "noInvites": {
+      "title": "No invites yet",
+      "description": "Create your first invite to get started",
+      "cta": "Create Your First Invite"
+    },
+    "status": {
+      "draft": "Draft",
+      "active": "Active",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    },
+    "stats": {
+      "totalSeats": "Total Seats",
+      "confirmed": "Confirmed",
+      "pending": "Pending",
+      "declined": "Declined",
+      "available": "Available",
+      "views": "Views"
+    },
+    "actions": {
+      "viewDetails": "View Details",
+      "editInvite": "Edit Invite",
+      "generateQR": "Generate QR Code",
+      "sendInvites": "Send Invites",
+      "delete": "Delete"
+    },
+    "deleteConfirm": {
+      "title": "Delete Invite",
+      "message": "Are you sure you want to delete \"{{eventName}}\"? This action cannot be undone.",
+      "confirm": "Delete",
+      "cancel": "Cancel"
+    }
+  },
+  "inviteBuilder": {
+    "title": "Create New Invite",
+    "editTitle": "Edit Invite",
+    "tabs": {
+      "components": "Components",
+      "design": "Design"
+    },
+    "components": {
+      "title": "Title",
+      "textBlock": "Text Block",
+      "image": "Image",
+      "date": "Date",
+      "location": "Location",
+      "description": "Drag or click to add components"
+    },
+    "design": {
+      "backgroundColor": "Background Color",
+      "textColor": "Text Color",
+      "primaryColor": "Primary Color",
+      "fontFamily": "Font Family"
+    },
+    "eventDetails": {
+      "title": "Event Details",
+      "eventName": "Event Name",
+      "eventDate": "Event Date",
+      "eventTime": "Event Time",
+      "location": "Location",
+      "description": "Description",
+      "maxSeats": "Max Seats"
+    },
+    "canvas": {
+      "placeholder": "Add components from the left panel to start designing",
+      "imagePlaceholder": "Image Placeholder"
+    }
+  },
+  "inviteDetails": {
+    "eventDetails": "Event Details",
+    "date": "Date",
+    "time": "Time",
+    "location": "Location",
+    "description": "Description",
+    "tabs": {
+      "thingsToKnow": "Things to Know",
+      "qrCode": "QR Code & Link"
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "previewInvite": "Preview Invite",
+      "viewRSVPs": "View RSVPs",
+      "deleteInvite": "Delete Invite"
+    }
+  },
+  "thingsToKnow": {
+    "title": "Things to Know",
+    "addItem": "Add Item",
+    "noItems": {
+      "title": "No information added yet",
+      "description": "Help your guests by adding hotels, restaurants, and other useful information",
+      "cta": "Add First Item"
+    },
+    "categories": {
+      "hotels": "Hotels",
+      "restaurants": "Restaurants",
+      "attractions": "Attractions",
+      "transportation": "Transportation",
+      "other": "Other"
+    },
+    "form": {
+      "addTitle": "Add New Item",
+      "editTitle": "Edit Item",
+      "category": "Category",
+      "title": "Title",
+      "description": "Description",
+      "address": "Address",
+      "phone": "Phone",
+      "website": "Website",
+      "websitePlaceholder": "https://..."
+    },
+    "actions": {
+      "visitWebsite": "Visit Website"
+    }
+  },
+  "qrCode": {
+    "title": "QR Code",
+    "downloadQR": "Download QR",
+    "shareQR": "Share",
+    "inviteLink": {
+      "title": "Invitation Link",
+      "description": "Share this link with your guests so they can RSVP",
+      "copy": "Copy",
+      "copied": "Copied!"
+    },
+    "howToUse": {
+      "title": "How to Use",
+      "step1": "Download the QR code and include it in your printed invitations",
+      "step2": "Share the invitation link via email, text, or social media",
+      "step3": "Guests can scan the QR code or click the link to RSVP instantly",
+      "step4": "Track responses in real-time from your dashboard"
+    }
+  },
+  "rsvp": {
+    "title": "RSVP",
+    "confirmed": "Confirmed",
+    "pending": "Pending",
+    "declined": "Declined",
+    "guestName": "Guest Name",
+    "guestEmail": "Guest Email",
+    "seats": "Seats",
+    "message": "Message",
+    "respondedAt": "Responded At"
+  },
+  "settings": {
+    "title": "Settings",
+    "profile": "Profile",
+    "preferences": "Preferences",
+    "language": "Language",
+    "notifications": "Notifications"
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "notFound": "Page not found",
+    "unauthorized": "You are not authorized to access this resource",
+    "networkError": "Network error. Please check your connection."
+  },
+  "language": {
+    "english": "English",
+    "spanish": "Español",
+    "switchLanguage": "Switch Language"
+  }
+}

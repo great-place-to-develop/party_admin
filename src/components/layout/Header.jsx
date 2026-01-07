@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import {
   AppBar,
   Toolbar,
@@ -19,10 +20,12 @@ import {
   Dashboard,
   Settings,
 } from '@mui/icons-material';
+import { LanguageSwitcher } from '../common/LanguageSwitcher';
 
 export const Header = ({ onMenuClick }) => {
   const { user, logout, isAuthenticated } = useAuth0();
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleMenuOpen = (event) => {
@@ -63,8 +66,10 @@ export const Header = ({ onMenuClick }) => {
           sx={{ flexGrow: 1, cursor: 'pointer' }}
           onClick={() => navigate(isAuthenticated ? '/dashboard' : '/')}
         >
-          Party Admin
+          {t('app.name')}
         </Typography>
+
+        <LanguageSwitcher />
 
         {isAuthenticated ? (
           <Box display="flex" alignItems="center" gap={2}>
@@ -85,21 +90,21 @@ export const Header = ({ onMenuClick }) => {
             >
               <MenuItem onClick={handleDashboard}>
                 <Dashboard sx={{ mr: 2 }} />
-                Dashboard
+                {t('navigation.dashboard')}
               </MenuItem>
               <MenuItem onClick={() => { handleMenuClose(); navigate('/settings'); }}>
                 <Settings sx={{ mr: 2 }} />
-                Settings
+                {t('navigation.settings')}
               </MenuItem>
               <MenuItem onClick={handleLogout}>
                 <Logout sx={{ mr: 2 }} />
-                Logout
+                {t('auth.logout')}
               </MenuItem>
             </Menu>
           </Box>
         ) : (
           <Button color="inherit" onClick={() => navigate('/')}>
-            Sign In
+            {t('auth.signIn')}
           </Button>
         )}
       </Toolbar>

@@ -43,6 +43,9 @@ A modern, SEO-optimized web application for creating beautiful party invitations
 - **UI Framework**: Material-UI (MUI) v7
 - **Routing**: React Router v7
 - **Authentication**: Auth0
+- **Localization**: i18next / react-i18next
+- **Feature Flags**: LaunchDarkly
+- **Analytics**: Hotjar
 - **Drag & Drop**: @dnd-kit
 - **QR Codes**: qrcode.react
 - **Build Tool**: Vite
@@ -53,6 +56,8 @@ A modern, SEO-optimized web application for creating beautiful party invitations
 - Node.js 18+ and npm
 - Auth0 account (free tier available)
 - Backend API (see API_SPECIFICATION.md)
+- (Optional) Hotjar account for analytics
+- (Optional) LaunchDarkly account for feature flags
 
 ## Getting Started
 
@@ -90,6 +95,16 @@ VITE_API_BASE_URL=http://localhost:3001/api
 
 # Google AdSense (optional - for production)
 VITE_ADSENSE_CLIENT_ID=ca-pub-xxxxxxxxxx
+
+# Hotjar Tracking (optional - for analytics)
+VITE_HOTJAR_ID=your-hotjar-id
+VITE_HOTJAR_VERSION=6
+
+# LaunchDarkly Feature Flags (optional)
+VITE_LAUNCHDARKLY_CLIENT_ID=your-launchdarkly-client-id
+
+# Localization
+VITE_DEFAULT_LANGUAGE=en
 ```
 
 ### 4. Set up Auth0
@@ -240,7 +255,92 @@ VITE_AUTH0_CLIENT_ID=your-prod-client-id
 VITE_AUTH0_AUDIENCE=your-api-audience
 VITE_API_BASE_URL=https://api.yourdomain.com/api
 VITE_ADSENSE_CLIENT_ID=ca-pub-xxxxxxxxxx
+VITE_HOTJAR_ID=your-hotjar-id
+VITE_HOTJAR_VERSION=6
+VITE_LAUNCHDARKLY_CLIENT_ID=your-launchdarkly-client-id
+VITE_DEFAULT_LANGUAGE=en
 ```
+
+## Localization (i18n)
+
+The application supports multiple languages out of the box:
+
+- **English** (en) - Default
+- **Spanish** (es)
+
+### Features
+
+- Automatic language detection based on browser settings
+- Manual language switching via header menu
+- Persistent language selection (saved to localStorage)
+- Full UI translation coverage
+- Easy to add new languages
+
+### Adding Translations
+
+All translation files are in `/src/locales/[lang]/translation.json`. To use translations in your components:
+
+```jsx
+import { useTranslation } from 'react-i18next';
+
+function MyComponent() {
+  const { t } = useTranslation();
+  return <h1>{t('landing.hero.title')}</h1>;
+}
+```
+
+For detailed documentation, see [LOCALIZATION_AND_TRACKING.md](./LOCALIZATION_AND_TRACKING.md).
+
+## Analytics with Hotjar
+
+Hotjar integration provides:
+
+- **Session Recordings**: Watch how users interact with your app
+- **Heatmaps**: See where users click, move, and scroll
+- **User Identification**: Track authenticated users
+- **Custom Events**: Track specific actions
+
+### Setup
+
+1. Sign up at [Hotjar](https://www.hotjar.com)
+2. Get your Site ID
+3. Add to environment variables
+4. Hotjar will automatically track all user interactions
+
+Hotjar is automatically disabled in development mode to avoid polluting your analytics.
+
+## Feature Flags with LaunchDarkly
+
+LaunchDarkly enables you to:
+
+- **Toggle Features**: Turn features on/off without deploying
+- **A/B Testing**: Test different versions with different users
+- **Gradual Rollouts**: Release to a percentage of users
+- **User Targeting**: Enable features for specific users/segments
+
+### Predefined Flags
+
+- `enable-new-invite-builder` - Toggle new invite builder
+- `enable-email-templates` - Email template customization
+- `enable-sms-notifications` - SMS notifications
+- `enable-payment-integration` - Payment features
+- `max-invites-per-user` - Limit invites per user
+- And more...
+
+### Using Feature Flags
+
+```jsx
+import { useFeatureFlag } from '../hooks/useFeatureFlag';
+import { FEATURE_FLAGS } from '../config/launchdarkly.config';
+
+function MyComponent() {
+  const showNewBuilder = useFeatureFlag(FEATURE_FLAGS.ENABLE_NEW_INVITE_BUILDER);
+
+  return showNewBuilder ? <NewBuilder /> : <OldBuilder />;
+}
+```
+
+For complete documentation, see [LOCALIZATION_AND_TRACKING.md](./LOCALIZATION_AND_TRACKING.md).
 
 ## SEO Optimization
 

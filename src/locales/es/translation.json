@@ -1,0 +1,306 @@
+{
+  "app": {
+    "name": "Party Admin",
+    "tagline": "Crea Hermosas Invitaciones de Fiesta y Gestiona Eventos"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "view": "Ver",
+    "close": "Cerrar",
+    "confirm": "Confirmar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "add": "Agregar",
+    "create": "Crear",
+    "update": "Actualizar",
+    "send": "Enviar",
+    "share": "Compartir",
+    "download": "Descargar",
+    "preview": "Vista previa",
+    "yes": "Sí",
+    "no": "No"
+  },
+  "auth": {
+    "signIn": "Iniciar Sesión",
+    "signOut": "Cerrar Sesión",
+    "logout": "Salir",
+    "getStarted": "Comenzar Gratis",
+    "welcome": "Bienvenido de nuevo",
+    "signInToContinue": "Inicia sesión para continuar"
+  },
+  "navigation": {
+    "dashboard": "Panel de Control",
+    "myInvites": "Mis Invitaciones",
+    "createInvite": "Crear Invitación",
+    "settings": "Configuración",
+    "profile": "Perfil"
+  },
+  "landing": {
+    "hero": {
+      "title": "Crea Hermosas Invitaciones de Fiesta en Minutos",
+      "subtitle": "Creador de invitaciones de fiesta en línea gratis y herramienta de gestión de eventos. Diseña invitaciones personalizadas, rastrea confirmaciones y gestiona todo en un solo lugar.",
+      "cta": "Comenzar Gratis",
+      "learnMore": "Saber Más"
+    },
+    "perfectFor": {
+      "title": "Perfecto para:",
+      "birthdayParties": "Fiestas de Cumpleaños",
+      "weddings": "Bodas",
+      "corporateEvents": "Eventos Corporativos",
+      "babyShowers": "Baby Showers",
+      "graduations": "Graduaciones",
+      "anyCelebration": "Cualquier Celebración"
+    },
+    "features": {
+      "title": "Todo lo que Necesitas para Planear tu Evento Perfecto",
+      "subtitle": "Herramientas profesionales de gestión de eventos, completamente gratis",
+      "customDesigner": {
+        "title": "Diseñador de Invitaciones Personalizado",
+        "description": "Crea impresionantes invitaciones de fiesta con nuestro diseñador de arrastrar y soltar. Personaliza colores, fuentes, imágenes y diseños para que coincidan perfectamente con el tema de tu evento."
+      },
+      "inviteManagement": {
+        "title": "Gestión Fácil de Invitaciones",
+        "description": "Envía invitaciones por correo electrónico, rastrea confirmaciones, gestiona listas de invitados y maneja confirmaciones de asientos todo en un solo lugar. Nunca pierdas el rastro de tus invitados."
+      },
+      "qrCode": {
+        "title": "Generación de Código QR y URL",
+        "description": "Genera códigos QR únicos y URLs compartibles para tus invitaciones. Facilita que los invitados confirmen asistencia y soliciten asientos adicionales al instante."
+      },
+      "eventInfo": {
+        "title": "Centro de Información del Evento",
+        "description": "Comparte detalles importantes con tus invitados incluyendo hoteles cercanos, restaurantes, atracciones y opciones de transporte. Todo lo que necesitan en un solo lugar."
+      },
+      "templates": {
+        "title": "Hermosas Plantillas",
+        "description": "Elige entre nuestra colección de plantillas diseñadas profesionalmente o crea la tuya desde cero. Guarda plantillas personalizadas para eventos futuros."
+      },
+      "rsvpTracking": {
+        "title": "Rastreo de Confirmaciones",
+        "description": "Rastreo de confirmaciones en tiempo real con actualizaciones automáticas. Sabe exactamente quién viene, quién está pendiente y cuántos asientos están confirmados."
+      }
+    },
+    "howItWorks": {
+      "title": "Cómo Funciona",
+      "step1": {
+        "title": "Regístrate",
+        "description": "Crea tu cuenta gratuita en segundos"
+      },
+      "step2": {
+        "title": "Diseña",
+        "description": "Elige una plantilla o crea desde cero"
+      },
+      "step3": {
+        "title": "Personaliza",
+        "description": "Agrega los detalles de tu evento, colores e imágenes"
+      },
+      "step4": {
+        "title": "Envía",
+        "description": "Comparte por correo electrónico, URL o código QR"
+      },
+      "step5": {
+        "title": "Rastrea",
+        "description": "Monitorea confirmaciones y gestiona tu lista de invitados"
+      },
+      "step6": {
+        "title": "Celebra",
+        "description": "¡Disfruta tu evento perfectamente planificado!"
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Crear tu Invitación Perfecta?",
+      "subtitle": "Únete a miles de planificadores de eventos felices usando Party Admin",
+      "button": "Comienza a Crear Gratis"
+    },
+    "footer": {
+      "copyright": "© 2026 Party Admin. Todos los derechos reservados."
+    }
+  },
+  "dashboard": {
+    "title": "Panel de Control",
+    "stats": {
+      "totalInvites": "Total de Invitaciones",
+      "totalGuests": "Total de Invitados",
+      "confirmed": "Confirmados",
+      "upcomingEvents": "Eventos Próximos"
+    },
+    "recentInvites": "Invitaciones Recientes",
+    "viewAll": "Ver Todas",
+    "noInvites": {
+      "title": "Aún no hay invitaciones",
+      "description": "Crea tu primera invitación para comenzar",
+      "cta": "Crea tu Primera Invitación"
+    }
+  },
+  "invites": {
+    "title": "Mis Invitaciones",
+    "createNew": "Crear Nueva Invitación",
+    "noInvites": {
+      "title": "Aún no hay invitaciones",
+      "description": "Crea tu primera invitación para comenzar",
+      "cta": "Crea tu Primera Invitación"
+    },
+    "status": {
+      "draft": "Borrador",
+      "active": "Activa",
+      "completed": "Completada",
+      "cancelled": "Cancelada"
+    },
+    "stats": {
+      "totalSeats": "Asientos Totales",
+      "confirmed": "Confirmados",
+      "pending": "Pendientes",
+      "declined": "Rechazados",
+      "available": "Disponibles",
+      "views": "Vistas"
+    },
+    "actions": {
+      "viewDetails": "Ver Detalles",
+      "editInvite": "Editar Invitación",
+      "generateQR": "Generar Código QR",
+      "sendInvites": "Enviar Invitaciones",
+      "delete": "Eliminar"
+    },
+    "deleteConfirm": {
+      "title": "Eliminar Invitación",
+      "message": "¿Estás seguro de que quieres eliminar \"{{eventName}}\"? Esta acción no se puede deshacer.",
+      "confirm": "Eliminar",
+      "cancel": "Cancelar"
+    }
+  },
+  "inviteBuilder": {
+    "title": "Crear Nueva Invitación",
+    "editTitle": "Editar Invitación",
+    "tabs": {
+      "components": "Componentes",
+      "design": "Diseño"
+    },
+    "components": {
+      "title": "Título",
+      "textBlock": "Bloque de Texto",
+      "image": "Imagen",
+      "date": "Fecha",
+      "location": "Ubicación",
+      "description": "Arrastra o haz clic para agregar componentes"
+    },
+    "design": {
+      "backgroundColor": "Color de Fondo",
+      "textColor": "Color de Texto",
+      "primaryColor": "Color Primario",
+      "fontFamily": "Familia de Fuente"
+    },
+    "eventDetails": {
+      "title": "Detalles del Evento",
+      "eventName": "Nombre del Evento",
+      "eventDate": "Fecha del Evento",
+      "eventTime": "Hora del Evento",
+      "location": "Ubicación",
+      "description": "Descripción",
+      "maxSeats": "Asientos Máximos"
+    },
+    "canvas": {
+      "placeholder": "Agrega componentes desde el panel izquierdo para comenzar a diseñar",
+      "imagePlaceholder": "Marcador de Imagen"
+    }
+  },
+  "inviteDetails": {
+    "eventDetails": "Detalles del Evento",
+    "date": "Fecha",
+    "time": "Hora",
+    "location": "Ubicación",
+    "description": "Descripción",
+    "tabs": {
+      "thingsToKnow": "Información Útil",
+      "qrCode": "Código QR y Enlace"
+    },
+    "quickActions": {
+      "title": "Acciones Rápidas",
+      "previewInvite": "Vista Previa de Invitación",
+      "viewRSVPs": "Ver Confirmaciones",
+      "deleteInvite": "Eliminar Invitación"
+    }
+  },
+  "thingsToKnow": {
+    "title": "Información Útil",
+    "addItem": "Agregar Ítem",
+    "noItems": {
+      "title": "Aún no se ha agregado información",
+      "description": "Ayuda a tus invitados agregando hoteles, restaurantes y otra información útil",
+      "cta": "Agregar Primer Ítem"
+    },
+    "categories": {
+      "hotels": "Hoteles",
+      "restaurants": "Restaurantes",
+      "attractions": "Atracciones",
+      "transportation": "Transporte",
+      "other": "Otro"
+    },
+    "form": {
+      "addTitle": "Agregar Nuevo Ítem",
+      "editTitle": "Editar Ítem",
+      "category": "Categoría",
+      "title": "Título",
+      "description": "Descripción",
+      "address": "Dirección",
+      "phone": "Teléfono",
+      "website": "Sitio Web",
+      "websitePlaceholder": "https://..."
+    },
+    "actions": {
+      "visitWebsite": "Visitar Sitio Web"
+    }
+  },
+  "qrCode": {
+    "title": "Código QR",
+    "downloadQR": "Descargar QR",
+    "shareQR": "Compartir",
+    "inviteLink": {
+      "title": "Enlace de Invitación",
+      "description": "Comparte este enlace con tus invitados para que puedan confirmar asistencia",
+      "copy": "Copiar",
+      "copied": "¡Copiado!"
+    },
+    "howToUse": {
+      "title": "Cómo Usar",
+      "step1": "Descarga el código QR e inclúyelo en tus invitaciones impresas",
+      "step2": "Comparte el enlace de invitación por correo electrónico, mensaje de texto o redes sociales",
+      "step3": "Los invitados pueden escanear el código QR o hacer clic en el enlace para confirmar asistencia al instante",
+      "step4": "Rastrea las respuestas en tiempo real desde tu panel de control"
+    }
+  },
+  "rsvp": {
+    "title": "Confirmación",
+    "confirmed": "Confirmado",
+    "pending": "Pendiente",
+    "declined": "Rechazado",
+    "guestName": "Nombre del Invitado",
+    "guestEmail": "Correo del Invitado",
+    "seats": "Asientos",
+    "message": "Mensaje",
+    "respondedAt": "Respondió en"
+  },
+  "settings": {
+    "title": "Configuración",
+    "profile": "Perfil",
+    "preferences": "Preferencias",
+    "language": "Idioma",
+    "notifications": "Notificaciones"
+  },
+  "errors": {
+    "generic": "Algo salió mal. Por favor intenta de nuevo.",
+    "notFound": "Página no encontrada",
+    "unauthorized": "No estás autorizado para acceder a este recurso",
+    "networkError": "Error de red. Por favor verifica tu conexión."
+  },
+  "language": {
+    "english": "English",
+    "spanish": "Español",
+    "switchLanguage": "Cambiar Idioma"
+  }
+}
