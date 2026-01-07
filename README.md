@@ -5,34 +5,40 @@ A modern, SEO-optimized web application for creating beautiful party invitations
 ## Features
 
 ### 🎨 Custom Invite Designer
+
 - Drag-and-drop invite builder
 - Pre-built templates and custom designs
 - Customizable colors, fonts, and layouts
 - Real-time preview
 
 ### 📧 Invite Management
+
 - Send invitations via email
 - Generate QR codes for quick RSVP
 - Shareable URLs for easy distribution
 - Track RSVPs in real-time
 
 ### 📊 Guest Management
+
 - Monitor confirmed, pending, and declined RSVPs
 - Manage seat allocations
 - Send reminders and updates
 
 ### ℹ️ Event Information Hub
+
 - Share hotels, restaurants, and attractions
 - Transportation and parking information
 - Organized by categories
 - Easy to update and manage
 
 ### 💰 Ad Integration
+
 - Google AdSense ready
 - Non-intrusive ad placements
 - Helps keep the platform free
 
 ### 🔍 SEO Optimized
+
 - Server-side meta tags
 - Structured data for search engines
 - Optimized for discovery
@@ -126,10 +132,56 @@ The application will be available at `http://localhost:5173`
 
 ## Available Scripts
 
+### Development
+
 - `npm run dev` - Start development server
-- `npm run build` - Build for production
+- `npm run type-check` - Run TypeScript type checking
+
+### Building
+
+- `npm run build` - Type check and build for production
 - `npm run preview` - Preview production build
+
+### Code Quality
+
 - `npm run lint` - Run ESLint
+- `npm run lint:fix` - Fix ESLint errors automatically
+- `npm run format` - Format code with Prettier
+- `npm run format:check` - Check code formatting
+
+## Development Tools
+
+This project includes a complete development setup:
+
+### TypeScript Support
+
+- Full TypeScript support (optional - you can use JavaScript too)
+- Type checking integrated into build process
+- Path aliases for cleaner imports (`@components/*`, `@hooks/*`, etc.)
+
+### Code Quality Tools
+
+- **ESLint** - Linting for JavaScript and TypeScript
+- **Prettier** - Consistent code formatting
+- **Husky** - Pre-commit hooks to ensure quality
+- **lint-staged** - Run linters on staged files only
+
+### VS Code Integration
+
+- Recommended extensions
+- Auto-format on save
+- Integrated debugging
+- TypeScript IntelliSense
+
+### Pre-commit Hooks
+
+Every commit automatically:
+
+- Lints and fixes code
+- Formats code with Prettier
+- Ensures code quality before commit
+
+For detailed development guidelines, see [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## Project Structure
 
@@ -175,18 +227,21 @@ The backend should implement all endpoints specified in the API documentation.
 ## Features Breakdown
 
 ### Landing Page
+
 - SEO-optimized with meta tags and structured data
 - Feature showcase
 - Call-to-action sections
 - Responsive design
 
 ### Dashboard
+
 - Overview of all invites
 - Quick statistics
 - Recent activity
 - Quick actions
 
 ### Invite Builder
+
 - Drag-and-drop interface
 - Component palette (text, images, dates, etc.)
 - Design customization panel
@@ -194,6 +249,7 @@ The backend should implement all endpoints specified in the API documentation.
 - Save and publish
 
 ### Invite Management
+
 - List all invites
 - Filter and search
 - View detailed statistics
@@ -202,6 +258,7 @@ The backend should implement all endpoints specified in the API documentation.
 - Track RSVPs
 
 ### Things to Know
+
 - Categorized information (hotels, restaurants, etc.)
 - Easy CRUD operations
 - Drag to reorder
@@ -231,6 +288,7 @@ The app includes placeholder components for Google AdSense:
 ### Frontend Deployment
 
 1. Build the application:
+
 ```bash
 npm run build
 ```
@@ -390,6 +448,7 @@ The app is optimized for performance:
 ## Support
 
 For questions or issues:
+
 - Check the API_SPECIFICATION.md for backend integration
 - Review the code in `/src/services` for API usage examples
 - Contact the development team
@@ -397,6 +456,7 @@ For questions or issues:
 ## Roadmap
 
 Future enhancements:
+
 - [ ] Email template customization
 - [ ] SMS notifications
 - [ ] Guest check-in app
@@ -411,6 +471,7 @@ Future enhancements:
 ## Acknowledgments
 
 Built with:
+
 - React
 - Material-UI
 - Auth0
